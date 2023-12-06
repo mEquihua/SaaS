@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+
+<body>
+
+	<!--Menu de navegación-->
+	<header>
+		<nav class="menu" display="flex" justify-content="center">
+		  <a href="/index.html">Home</a>
+		  <a href="#">About Us</a>
+		  <a href="#">Services</a>
+		  <a href="#">Contact</a>
+		</nav>
+	  </header>
+
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>¡Contactanos!</h2>
+                <form id="myForm" action="#" method="post">
+                    <input type="text" class="field" placeholder="Nombre">
+                    <input type="text" class="field" placeholder="Tu email">
+                    <input type="text" class="field" placeholder="Numero de telefono">
+                    <textarea placeholder="Mensajito" class="field"></textarea>
+                    <button type="submit" class="btn" form="myForm">Enviar we</button>
+                </form>
+                <div id="mensaje-enviado"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            // Limpiar los campos después de enviar el formulario
+            document.getElementById('myForm').reset();
+            // Evitar el envío real del formulario
+            event.preventDefault();
+
+            // Mostrar mensaje después de enviar el formulario
+            document.getElementById('mensaje-enviado').innerText = "Formulario enviado";
+        });
+    </script>
+</body>
+
+</html>

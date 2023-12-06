@@ -1,0 +1,288 @@
+/*Estilos generales*/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 50px;
+}
+
+/*Estilos de menu de navegación*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #100a31;
+  z-index: 10;
+  padding: 14px 0px;
+  text-align: center;
+  
+}
+
+menu {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 15px 20px;
+    margin: 0 10px;
+    color: #fff; /* Color del texto no seleccionado */
+    border-bottom: 2px solid transparent; /* Línea de subrayado inicialmente transparente */
+    transition: border-bottom-color 0.3s; /* Agrega una transición suave al color del subrayado */
+}
+
+.menu a:hover,
+.menu a:active {
+    border-bottom-color: #008CBA; /* Color del subrayado al colocar y seleccionar */
+    color: #008CBA; /* Color del texto al colocar y seleccionar */
+}
+
+
+/*Estilos portada*/
+.portada {
+  padding: 50px;
+  text-align: center;
+  flex-direction: row;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.2) )  ,url('/Recursos/security-4503679_1920.jpg');
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 70px ; /* Padding para el contenedor principal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 600px;
+}
+
+.content {
+  flex: 1;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 60px;
+  color:white; /* Color del texto */
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 10px black;
+}
+
+.content p {
+  font-size: 20px;
+  color: white; /* Color del texto */
+  margin-bottom: 20px;
+  text-align: justify;
+  text-shadow: 0px 0px 10px black;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/*section conocenos*/
+h3 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+.conocenos{
+  padding: 0 25px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.Contenedor-conocenos {
+  display: flex;
+  align-items: center; /* Alinea la imagen en la parte inferior */
+  padding: 0px 70px 0; /* Agrega relleno alrededor del contenedor para crear espacio */
+}
+
+.Parrafos-y-boton-conocenos {
+  width: 54%;
+  font-size: 17px;
+  text-align: center;
+  flex: 1; /* Expande este div para ocupar el espacio restante */
+}
+
+.Parrafos-y-boton-conocenos p {
+  text-align: justify;
+  margin-bottom: 10px; /* Ajusta la cantidad de margen inferior para separar los párrafos */
+}
+
+.Parrafos-y-boton-conocenos .boton {
+  margin-top: 20px !important; /* Asegura que el margen superior se aplique al botón */
+  display: inline-block;
+}
+
+.imagen-conocenos {
+  max-height: 100%; /* Asegura que la imagen no sea más alta que el párrafo */
+  margin-right: 80px; /* Agrega margen a la derecha de la imagen */
+  margin-bottom: 50px; /* Agrega margen inferior a la imagen para separarla del texto */
+}
+
+.imagen-conocenos_1 {
+  display: none;
+}
+
+.btn {
+  background-color: #100a31;
+  color: #fff;
+  padding: 10px 20px; /* Ajusta el padding del botón */
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: rgba(70, 107, 219, 0.47); /* Cambio de color al pasar el mouse */
+}
+.btn:active {
+  /* Estilos cuando el botón está activo (presionado) */
+  background-color: #0f3c10; /* Cambia el color de fondo al presionar */
+  color: white; /* Cambia el color del texto al presionar */
+}
+/*Seccion Servicios*/
+/*mandando a llamar toda la seccion id"nuestros-programas"*/
+#nuestros-programas{
+  /*dandole un color negro al fondo de nuestra seccion*/
+  background-color: rgb(30, 30, 30 );
+  /*Color de la letra en blanco*/
+  color: white;
+   /*alineando el texto de la seccion*/
+   text-align: center;
+}
+/*mandando a llamar la clase "container" dentro de la seccion "nuestros-programas"*/
+#nuestros-programas .container{
+  /*dandole un tamaño a nuestra seccion o en el container de esta seccion*/
+  padding: 150px 12px;
+}
+#nuestros-programas .programas{
+  display: flex;
+  justify-content: center;
+}
+/**/
+#nuestros-programas h2{
+  /*quitandole el margen el titulo 2*/
+  margin-top: 0;
+  /*dandole mas tamaño a la letra*/
+  font-size: 60px;
+}
+
+.carta h3 {
+  font-size: 35px;
+}
+
+.carta p {
+  font-size: 13px;
+}
+ 
+.carta a {
+  text-decoration: none;
+}
+#nuestros-programas .carta{
+  padding: 20px 35px;
+  background-size: 100% 150px;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  background-color: rgba(50, 50, 50, 1);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  margin: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.button{
+  /*Dandole un tamaño a nuestras letras en los botones (em es el tamaño proporcinal del tipo de letra)*/
+  font-size: 15px;
+  /*esta sentencia es para darle un color en negritas de las letras del boton*/
+  font-weight: bold;
+  /*Esta sentencia es para darle un tamaño a nuestro boton*/
+  padding: 10px 30px;
+  /*Esta sentencia es para darle un redondeado a los botones*/
+  border-radius: 5px;
+  /*Borde y tamaño del boton el ultimo digito del rgba es la transparencia del color*/
+  border: 2px solid rgba(0,0,0,0.3);
+  /*Sombra del boton, despues es el posicionamiento del boton y el color de la sombra*/
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  /*Color de las letras del boton*/
+  color: white;
+  /*color del boton*/
+  background-color: #0a061f;
+}
+/*Esta sentencia es para cuando pongamos el cursor sobre el boton este cambie de color*/
+.boton:hover{
+  background-color: rgb(101, 33, 165);
+}
+.carta:first-child{
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/Recursos/Imagenes/seguridad-en-la-nube.png");
+
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/Recursos/Imagenes/Gestionar-la-seguridad-de-la-informaci-n-1.jpg");
+}
+
+.carta:nth-child(3){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("/Recursos/Imagenes/proteccion_malware-960x480.jpg");
+
+}
+/* Estilos para el pie de página */
+footer{
+  background-color: rgb(230,230,230);
+}
+
+footer p{
+  margin: 0;
+  padding: 12px;
+  color: rgb(100,100,100);
+  font-size: 25px;
+}
+
+footer .container{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
